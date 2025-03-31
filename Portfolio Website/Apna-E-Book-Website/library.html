@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library - Apna E-Book </title>
+    <link rel="stylesheet" href="stylelibrary.css">
+    <link rel="icon" href="logo.jpg" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>📚 Apna E-Book</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="library.html">My Library</a></li>
+                <li class="dropdown">
+                    <a href="#">Categories ⏷</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#pbooks">Programming</a></li>
+                        <li><a href="#hbooks">History</a></li>
+                        <li><a href="#fbooks">Fiction</a></li>
+                        <li><a href="#sbooks">Science</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://books.google.com/" target="_blank">Browse</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search books...">
+            <button id="goButton">Search</button>
+        </div>
+        <div class="theme-toggle">
+            <button onclick="toggleTheme()">🌙</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>📖 Welcome to Apna E-Book Library</h1>
+    </section>
+
+
+
+    <main>
+        <h2 id="pbooks"><center>📂 Programming Books</center></h2>
+    
+        <div class="book">
+            <img src="pbook1.jpg" alt="Computer Basics and C Programming">
+            <div class="book-info">
+                <h2>Computer Basics and C Programming</h2>
+                <p><b>Author:</b> V. Rajaraman</p>
+                <p><b>Genre:</b> Programming</p>
+                <p><b>Description:</b> A fundamental book covering computer basics and an introduction to C programming. Ideal for beginners in computer science.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="pbook2.jpg" alt="Applied Python Programming">
+            <div class="book-info">
+                <h2>Applied Python Programming</h2>
+                <p><b>Author:</b> Sumit Agrawal</p>
+                <p><b>Genre:</b> Programming</p>
+                <p><b>Description:</b> Covers Python applications in real-world scenarios, including data analysis, automation, and AI.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="pbook3.jpg" alt="HTML & CSS">
+            <div class="book-info">
+                <h2>HTML & CSS: Design and Build Websites</h2>
+                <p><b>Author:</b> Jon Duckett</p>
+                <p><b>Genre:</b> Web Development</p>
+                <p><b>Description:</b> A beautifully designed book covering HTML & CSS fundamentals for web development.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="pbook4.jpg" alt="Data Structures and Algorithms">
+            <div class="book-info">
+                <h2>Data Structures and Algorithms</h2>
+                <p><b>Author:</b> Narasimha Karumanchi</p>
+                <p><b>Genre:</b> Programming</p>
+                <p><b>Description:</b> A comprehensive guide to data structures and algorithms, covering problem-solving techniques.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="pbook5.jpg" alt="The Art of Computer Programming">
+            <div class="book-info">
+                <h2>The Art of Computer Programming</h2>
+                <p><b>Author:</b> Donald E. Knuth</p>
+                <p><b>Genre:</b> Computer Science</p>
+                <p><b>Description:</b> A classic book covering algorithms, mathematical techniques, and programming concepts in depth.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="pbook6.jpg" alt="Hacking">
+            <div class="book-info">
+                <h2>Hacking: The Art of Exploitation</h2>
+                <p><b>Author:</b> Jon Erickson</p>
+                <p><b>Genre:</b> Cybersecurity</p>
+                <p><b>Description:</b> A deep dive into cybersecurity, ethical hacking techniques, and penetration testing.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="pbook7.jpg" alt="Elements of Programming Interviews">
+            <div class="book-info">
+                <h2>Elements of Programming Interviews</h2>
+                <p><b>Author:</b> Adnan Aziz</p>
+                <p><b>Genre:</b> Programming Interviews</p>
+                <p><b>Description:</b> A must-read for those preparing for coding interviews, featuring coding challenges and solutions.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="pbook8.jpg" alt="What is Data Science">
+            <div class="book-info">
+                <h2>What is Data Science?</h2>
+                <p><b>Author:</b> Mike Loukides</p>
+                <p><b>Genre:</b> Data Science</p>
+                <p><b>Description:</b> A guide explaining the core concepts of data science, analytics, and machine learning.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <h2 id="hbooks"><center>📂 Historical Books</center></h2>
+    
+        <div class="book">
+            <img src="hbook1.jpg" alt="The Histories">
+            <div class="book-info">
+                <h2>The Histories</h2>
+                <p><b>Author:</b> Herodotus</p>
+                <p><b>Genre:</b> History</p>
+                <p><b>Description:</b> One of the earliest works of history, documenting wars, cultures, and ancient civilizations.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="hbook2.jpg" alt="The Decline and Fall of the Roman Empire">
+            <div class="book-info">
+                <h2>The Decline and Fall of the Roman Empire</h2>
+                <p><b>Author:</b> Edward Gibbon</p>
+                <p><b>Genre:</b> History</p>
+                <p><b>Description:</b> A detailed study on the fall of Rome and the historical consequences that followed.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="hbook3.jpg" alt="The Prince">
+            <div class="book-info">
+                <h2>The Prince</h2>
+                <p><b>Author:</b> Niccolò Machiavelli</p>
+                <p><b>Genre:</b> Political Science</p>
+                <p><b>Description:</b> A classic political treatise discussing power, leadership, and the strategies rulers use to maintain control.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="hbook4.jpg" alt="A Study of History">
+            <div class="book-info">
+                <h2>A Study of History</h2>
+                <p><b>Author:</b> Arnold J. Toynbee</p>
+                <p><b>Genre:</b> History</p>
+                <p><b>Description:</b> A comprehensive analysis of the rise and fall of civilizations, exploring patterns of history.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="hbook5.jpg" alt="The History of the Ancient World">
+            <div class="book-info">
+                <h2>The History of the Ancient World</h2>
+                <p><b>Author:</b> Susan Wise Bauer</p>
+                <p><b>Genre:</b> Ancient History</p>
+                <p><b>Description:</b> A fascinating exploration of ancient civilizations, covering Mesopotamia, Egypt, Greece, and more.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="hbook6.jpg" alt="Guns, Germs, and Steel">
+            <div class="book-info">
+                <h2>Guns, Germs, and Steel</h2>
+                <p><b>Author:</b> Jared Diamond</p>
+                <p><b>Genre:</b> History</p>
+                <p><b>Description:</b> Analyzes why some civilizations advanced faster than others, discussing geography, culture, and technology.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="hbook7.jpg" alt="Indian History">
+            <div class="book-info">
+                <h2>Indian History</h2>
+                <p><b>Author:</b> Arihant Magbook</p>
+                <p><b>Genre:</b> Indian History</p>
+                <p><b>Description:</b> A concise book covering the history of India from ancient times to modern independence movements.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+        <div class="book">
+            <img src="hbook8.jpg" alt="Society and Culture in Indian History">
+            <div class="book-info">
+                <h2>Society and Culture in Indian History</h2>
+                <p><b>Author:</b> Rajni Chauhan</p>
+                <p><b>Genre:</b> Indian History</p>
+                <p><b>Description:</b> Explores India's social and cultural evolution, covering traditions, customs, and historical transitions.</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+    
+    
+        
+    </main>
+    
+
+
+    <footer>
+        <p>📩 Contact: apnaebook@gmail.com | 📞 8830487472 | 📍 Kurundwad</p>
+        <p>© 2025 Created by: <b>Atharv Milind Suryavanshi</b></p>
+    </footer>
+</body>
+</html>

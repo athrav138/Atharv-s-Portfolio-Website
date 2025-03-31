@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  padding: 15px 20px;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation Bar */
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  text-align: left;
+}
+
+.dropdown-menu li a {
+  color: #007bff;
+  display: block;
+  font-size: 16px;
+}
+
+.dropdown-menu li a:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 14px;
+}
+
+.search-container button {
+  padding: 8px;
+  border: none;
+  background: yellow;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Theme Toggle */
+.theme-toggle button {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Book Container */
+.book {
+  display: flex;
+  align-items: center;
+  background: white;
+  margin: 20px auto;
+  padding: 15px;
+  max-width: 900px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.book:hover {
+  transform: scale(1.02);
+}
+
+.book img {
+  width: 150px;
+  height: 220px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.book-info {
+  flex: 1;
+}
+
+.book-info h2 {
+  margin: 0;
+  color: #007bff;
+}
+
+.book-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Buttons */
+.read-btn, .download-btn {
+  padding: 10px 15px;
+  margin: 10px 5px 0 0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.read-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.read-btn:hover {
+  background-color: #0056b3;
+}
+
+.download-btn {
+  background-color: green;
+  color: white;
+}
+
+.download-btn:hover {
+  background-color: #004d00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .book {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .book img {
+      margin-bottom: 15px;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+}
+
+
+
+

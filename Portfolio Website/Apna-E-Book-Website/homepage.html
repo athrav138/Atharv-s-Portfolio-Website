@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage - Apna E-Book</title>
+  <link rel="stylesheet" href="stylehome.css">
+  <link rel="icon" href="logo.jpg" type="image/x-icon">
+  <script src="homejava.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>📚 Apna E-Book</h1>
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="library.html">My Library</a></li>
+            <li class="dropdown">
+                <a href="#">Categories ⏷</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#pbooks">Programming</a></li>
+                    <li><a href="#hbooks">History</a></li>
+                    <li><a href="#fbooks">Fiction</a></li>
+                    <li><a href="#sbooks">Science</a></li>
+                </ul>
+            </li>
+            <li><a href="https://books.google.com/" target="_blank">Browse</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    
+    <div class="search-container">
+        <input type="text" id="searchBox" placeholder="Search books...">
+        <button id="goButton">🔍</button>
+    </div>
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()">🌙</button>
+    </div>
+</header>
+<section class="why-apna-ebook">
+  <p class="intro-text">
+      📖 <b>Apna E-Book</b> is your **one-stop destination for a vast collection of e-books**, offering **free access** to thousands of books across multiple genres. Whether you're a **student, professional, or book lover**, our mission is to make **knowledge accessible to everyone, anytime, anywhere**.
+      <br><br>
+      With a **user-friendly interface**, powerful **search & filter options**, and a seamless **reading experience**, Apna E-Book ensures that you can **find, read, and download** your favorite books effortlessly. From **programming and technology** to **history, fiction, and science**, our diverse collection caters to all reading enthusiasts.
+  </p>
+</section>
+
+
+
+<!-- Hero Image Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome To Apna e-book</h1>
+        <h1>📖 Discover the World of Knowledge</h1>
+        <p>Explore a vast collection of e-books across multiple genres.</p>
+        <a href="library.html" class="cta-btn">📚 Browse Library</a>
+    </div>
+</section>
+
+
+<main>
+    <h2 id="pbooks"><center>📂 Programming Books</center></h2>
+    <div class="book-gallery">
+
+        <div class="book">
+            <img src="pbook1.jpg" alt="Computer Basics and C Programming">
+            <div class="book-info">
+                <h2>Computer Basics and C Programming</h2>
+                <p><b>Author:</b> V. Rajaraman</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="pbook2.jpg" alt="Applied Python Programming">
+            <div class="book-info">
+                <h2>Applied Python Programming</h2>
+                <p><b>Author:</b> Sumit Agrawal</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="pbook3.jpg" alt="HTML & CSS">
+            <div class="book-info">
+                <h2>HTML & CSS: Design and Build Websites</h2>
+                <p><b>Author:</b> Jon Duckett</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="pbook4.jpg" alt="Data Structures and Algorithms">
+            <div class="book-info">
+                <h2>Data Structures and Algorithms</h2>
+                <p><b>Author:</b> Narasimha Karumanchi</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="pbook5.jpg" alt="The Art of Computer Programming">
+            <div class="book-info">
+                <h2>The Art of Computer Programming</h2>
+                <p><b>Author:</b> Donald E. Knuth</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="pbook6.jpg" alt="Hacking">
+            <div class="book-info">
+                <h2>Hacking: The Art of Exploitation</h2>
+                <p><b>Author:</b> Jon Erickson</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="pbook7.jpg" alt="Elements of Programming Interviews">
+            <div class="book-info">
+                <h2>Elements of Programming Interviews</h2>
+                <p><b>Author:</b> Adnan Aziz</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="pbook8.jpg" alt="What is Data Science">
+            <div class="book-info">
+                <h2>What is Data Science?</h2>
+                <p><b>Author:</b> Mike Loukides</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+    </div>
+
+    <h2 id="hbooks"><center>📂 Historical Books</center></h2>
+    <div class="book-gallery">
+
+        <div class="book">
+            <img src="hbook1.jpg" alt="The Histories">
+            <div class="book-info">
+                <h2>The Histories</h2>
+                <p><b>Author:</b> Herodotus</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="hbook2.jpg" alt="The Decline and Fall of the Roman Empire">
+            <div class="book-info">
+                <h2>The Decline and Fall of the Roman Empire</h2>
+                <p><b>Author:</b> Edward Gibbon</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="hbook3.jpg" alt="The Prince">
+            <div class="book-info">
+                <h2>The Prince</h2>
+                <p><b>Author:</b> Niccolò Machiavelli</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="hbook4.jpg" alt="A Study of History">
+            <div class="book-info">
+                <h2>A Study of History</h2>
+                <p><b>Author:</b> Arnold J. Toynbee</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="hbook5.jpg" alt="The History of the Ancient World">
+            <div class="book-info">
+                <h2>The History of the Ancient World</h2>
+                <p><b>Author:</b> Susan Wise Bauer</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="hbook6.jpg" alt="Guns, Germs, and Steel">
+            <div class="book-info">
+                <h2>Guns, Germs, and Steel</h2>
+                <p><b>Author:</b> Jared Diamond</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="hbook7.jpg" alt="Indian History">
+            <div class="book-info">
+                <h2>Indian History</h2>
+                <p><b>Author:</b> Arihant Magbook</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="hbook8.jpg" alt="Society and Culture in Indian History">
+            <div class="book-info">
+                <h2>Society and Culture in Indian History</h2>
+                <p><b>Author:</b> Rajni Chauhan</p>
+                <button class="read-btn">📖 Read</button>
+                <button class="download-btn">⬇ Download</button>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+
+
+  <footer>
+    <p>📩 Contact: apnaebook@gmail.com | 📞 8830487472 | 📍 Kurundwad</p>
+    <p>© 2025 Created by: <b>Atharv Milind Suryavanshi</b></p>
+</footer>
+</body>
+</html>
