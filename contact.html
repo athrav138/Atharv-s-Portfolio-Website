@@ -4,8 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me - Atharv</title>
-    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="icon" type="image/jpeg" href="Atharv.jpg">
+
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #121212;
+            color: white;
+            text-align: center;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #1a1a1a;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ccff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #00ccff;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #0066ff, #00ccff);
+            color: white;
+            margin-top: 70px;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .contact-info {
+            max-width: 400px;
+            text-align: left;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact-info i {
+            color: yellow;
+            margin-right: 10px;
+        }
+
+        .social-icons a {
+            font-size: 24px;
+            margin: 10px;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: yellow;
+        }
+
+        /* CONTACT FORM */
+        .contact-form {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            box-shadow: 0 0 10px white;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: yellow;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,7 +161,7 @@
                 <li><a href="#" class="active">Contact</a></li>
             </ul>
         </nav>
-    </header><BR><BR>
+    </header><br><br>
 
     <section class="contact">
         <h2>Get in Touch 📩</h2>
@@ -30,9 +173,9 @@
                 <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919922157472">+919922157472</a></p>
                 <p><i class="fas fa-map-marker-alt"></i> Location: Kurundwad. Dist-Kolahaput State-Maharastra Country-India Pin-416106</p>
                 <div class="social-icons">
-                    <a href="https://github.com/athrav138"><img src="github.jpg" height="30px"></a>
-                    <a href="https://www.linkedin.com/feed/"><img src="linkdin.png" height="30px"></a>
-                    <a href="https://github.com/athrav138"><img src="twitter.jpg" height="30px"></a>  
+                    <a href="https://github.com/athrav138"><img src="github.jpg" height="30px" alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/feed/"><img src="linkdin.png" height="30px" alt="LinkedIn"></a>
+                    <a href="https://github.com/athrav138"><img src="twitter.jpg" height="30px" alt="Twitter"></a>  
                 </div>
             </div>
 

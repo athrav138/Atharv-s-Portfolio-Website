@@ -4,15 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atharv's Portfolio</title>
-    <link rel="stylesheet" href="homestyle.css">
+
+    <!-- Browser Tab Favicon -->
+    <link rel="icon" type="image/jpeg" href="Atharv.jpg">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #111;
+            color: white;
+        }
+        header {
+            display: flex;
+            text-align: justify;
+            padding: 10px;
+            background: #222;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: yellow;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        nav ul li a:hover,
+        .active {
+            color: yellow;
+        }
+        .hero-image img {
+            width: 300px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px white;
+            background-color: #0066ff;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(to right, #0066ff, #00ccff);
+        }
+        .hero-content h1 {
+            font-size: 50px;
+        }
+        .hero-content h2 {
+            font-size: 30px;
+            color: yellow;
+        }
+        .buttons .btn {
+            display: inline-block;
+            background: yellow;
+            color: black;
+            padding: 10px 15px;
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .buttons .btn:hover {
+            background: white;
+        }
+        .about-preview,
+        .projects-preview {
+            text-align: center;
+            padding: 50px;
+            background: #222;
+        }
+        .skills {
+            text-align: center;
+            padding: 50px;
+            background: #333;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .skill {
+            background: yellow;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project-card {
+            background: yellow;
+            color: black;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .contact-preview {
+            text-align: center;
+            padding: 50px;
+            background: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+        }
+    </style>
 </head>
 <body>
     
     <header>
-        <h1 class="logo">Mr. Atharv Milind Suryavanshi  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h1>
-
+        <h1 class="logo">Mr. Atharv Milind Suryavanshi</h1>
         <nav>
-            <ul >
+            <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="project.html">Projects</a></li>
@@ -21,10 +138,9 @@
         </nav>
     </header><br><br><br><br>
     
-    <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-image" style="background-color:linear-gradient(to right, #0066ff, #00ccff);align-items:center;" >
-            <br><br><img style="text-align: left;" src="atharv.jpg" alt="Atharv's Image">
+        <div class="hero-image">
+            <img src="Atharv.jpg" alt="Atharv Image">
         </div>
 
         <div class="hero-content">
@@ -38,72 +154,60 @@
         </div>
     </section>
 
-    <!-- About Preview -->
     <section class="about-preview">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>I am a passionate software developer, specializing in AI & ML, game development, and web design. I love building innovative projects that solve real-world problems.</p>
-            <a href="about.html" class="btn">Read More</a>
-        </div>
+        <h2>About Me</h2>
+        <p>I am a passionate developer focusing on AI, ML, Game Dev & Web/UI.</p>
+        <a href="about.html" class="btn">Read More</a>
     </section>
 
-    <!-- Skills Section -->
     <section class="skills">
         <h2>My Skills</h2>
         <div class="skills-container">
-            <div class="skill"><i class="fab fa-html5"></i> HTML</div>
-            <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
-            <div class="skill"><i class="fas fa-code"></i> C</div>
-            <div class="skill"><i class="fab fa-python"></i> Python</div>
-            <div class="skill"><i class="fas fa-brain"></i> AI & ML</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">C</div>
+            <div class="skill">Python</div>
+            <div class="skill">AI & ML</div>
         </div>
     </section>
 
-    <!-- Projects Preview -->
     <section class="projects-preview">
-        <h2>My Recent Projects</h2>
+        <h2>My Projects</h2>
         <div class="projects-container">
             <div class="project-card">
                 <h3>Apna E-Book Website</h3>
                 <p>Online book platform</p>
                 <a href="project.html" class="btn">View More</a>
-            </div></div>
-            <h2>My Recent Projects</h2>
-        <div class="projects-container">
+            </div>
             <div class="project-card">
-                <h3>Atharv's Portfolio Website</h3>
-                <p>Online portfolio Website using HTML and CSS</p>
+                <h3>Portfolio Web</h3>
+                <p>Personal UI portfolio using HTML & CSS</p>
                 <a href="project.html" class="btn">View More</a>
-            </div></div>
-
+            </div>
+        </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact-preview">
         <h2>Get in Touch</h2>
         <p>Let's collaborate and build something amazing!</p>
         <a href="contact.html" class="btn">Contact Me</a>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Atharv Milind Suryavanshi | All Rights Reserved</p>
+        <p>&copy; 2025 Atharv Milind Suryavanshi | All rights reserved</p>
     </footer>
 
-    <!-- JavaScript for Typing Effect -->
     <script>
-        const typingText = ["Aspiring Software Architect", "AI & ML Enthusiast", "Game Developer"];
-        let index = 0;
-        let charIndex = 0;
+        const typingText = ["Software Architect", "AI & ML Enthusiast", "Game Developer"];
+        let index = 0, charIndex = 0;
         function typeEffect() {
-            document.querySelector(".typing").textContent = typingText[index].slice(0, charIndex);
+            document.querySelector(".typing").textContent =
+                typingText[index].slice(0, charIndex);
             if (charIndex < typingText[index].length) {
-                charIndex++;
-                setTimeout(typeEffect, 100);
+                charIndex++; setTimeout(typeEffect, 100);
             } else {
                 setTimeout(() => {
-                    charIndex = 0;
-                    index = (index + 1) % typingText.length;
+                    charIndex = 0; index = (index + 1) % typingText.length;
                     typeEffect();
                 }, 2000);
             }

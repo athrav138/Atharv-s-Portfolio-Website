@@ -4,8 +4,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Atharv</title>
-    <link rel="stylesheet" href="aboutstyle.css">
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/jpeg" href="Atharv.jpg">
+
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #121212;
+            color: white;
+            text-align: center;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #1a1a1a;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ccff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #00ccff;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #0066ff, #00ccff);
+            color: white;
+            margin-top: 70px;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .about-image img {
+            width: 250px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px white;
+        }
+
+        .about-text {
+            max-width: 500px;
+            text-align: left;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: yellow;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        /* SKILLS */
+        .skills {
+            text-align: center;
+            padding: 50px;
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .skill {
+            margin: 15px auto;
+            width: 50%;
+        }
+
+        .progress-bar {
+            background: white;
+            border-radius: 10px;
+            height: 10px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .progress {
+            background: yellow;
+            height: 10px;
+            border-radius: 10px;
+        }
+
+        /* TIMELINE */
+        .timeline {
+            text-align: center;
+            padding: 50px;
+            background: #222;
+            color: white;
+        }
+
+        .timeline-container {
+            max-width: 600px;
+            margin: auto;
+            position: relative;
+        }
+
+        .timeline-item {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        /* QUICK FACTS */
+        .facts {
+            text-align: center;
+            padding: 50px;
+            background: #333;
+            color: white;
+        }
+
+        .fact-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .fact-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            box-shadow: 0 0 5px white;
+        }
+
+        .fact-item i {
+            font-size: 30px;
+            color: yellow;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -79,7 +268,6 @@
             <div class="fact-item"><i class="fas fa-code"></i><p>1000+ Lines of Code Written</p></div>
             <div class="fact-item"><i class="fas fa-laptop-code"></i><p>1+ Projects Completed</p></div>
             <div class="fact-item"><i class="fas fa-graduation-cap"></i><p>Scored *97%* in SSC Board</p></div>
-            
         </div>
     </section>
 

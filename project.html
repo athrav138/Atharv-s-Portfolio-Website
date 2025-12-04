@@ -4,8 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects - Atharv</title>
-    <link rel="stylesheet" href="projectstyle.css">
+    <link rel="icon" type="image/jpeg" href="Atharv.jpg">
+
     <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #121212;
+            color: white;
+            text-align: center;
+        }
+
+        /* HEADER */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #1a1a1a;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00ccff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #00ccff;
+        }
+
+        /* PROJECTS SECTION */
+        .projects {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #0066ff, #00ccff);
+            color: white;
+            margin-top: 70px;
+        }
+
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 300px;
+            box-shadow: 0 0 10px white;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .project-info h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .project-info p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: yellow;
+            color: black;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1a1a1a;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,35 +146,67 @@
         </nav>
     </header><br><br><br><br>
     
-
-
     <section class="projects">
         <h2>My Projects 🚀</h2>
         <p>Here are some of my latest projects.</p>
 
         <div class="projects-container">
 
-            <!-- Project 1-->
+            <!-- Project 1: Apna E-Book Website -->
             <div class="project-card">
-                <img src="apna.png" alt="Project 2">
+                <img src="apna.png" alt="Apna E-Book Website">
                 <div class="project-info">
-                    <h3>E-Book Website</h3>
-                    <p>An online e-book platform with search, filters, and login system.</p>
-                    <a href="Apna-E-Book-Website/homepage.html" class="btn" target="_blank">View Live</a>
-                    <a href="https://github.com/athrav138/Apna-E-Book-Website.git" class="btn" target="_blank">GitHub</a>
+                    <h3>Apna E-Book Website</h3>
+                    <p>An online e-book platform with search, filters, and user-friendly UI.</p>
+                    <a href="https://athrav138.github.io/Apna-E-Book-Website/" class="btn" target="_blank">View Live</a>
+                    <a href="https://github.com/athrav138/Apna-E-Book-Website" class="btn" target="_blank">GitHub</a>
                 </div>
             </div>
 
-            <!-- Project 2 -->
+            <!-- Project 2: Portfolio Website -->
             <div class="project-card">
-                <img src="portfolio.png" alt="Project 3">
+                <img src="portfolio.png" alt="Portfolio Website">
                 <div class="project-info">
                     <h3>Portfolio Website</h3>
-                    <p>My personal portfolio with a modern UI and interactive features.</p>
-                    <a href="home.html" class="btn" target="_blank">View Live</a>
-                    <a href="https://github.com/athrav138/Atharv-s-Portfolio-Website.git" class="btn" target="_blank">GitHub</a>
+                    <p>My personal portfolio with a modern UI and responsive layout.</p>
+                    <a href="https://athrav138.github.io/ATHARV-S-PORFOLIO-WEB/" class="btn" target="_blank">View Live</a>
+                    <a href="https://github.com/athrav138/ATHARV-S-PORFOLIO-WEB" class="btn" target="_blank">GitHub</a>
                 </div>
             </div>
+
+            <!-- Project 3: Web AI Hackathon -->
+            <div class="project-card">
+                <img src="task.png" alt="Web AI Hackathon">
+                <div class="project-info">
+                    <h3>Web AI Hackathon</h3>
+                    <p>A web-based AI project built for a hackathon, combining UI and ML logic.</p>
+                    <a href="https://athrav138.github.io/WEBAI-HACKATHON/" class="btn" target="_blank">View Live</a>
+                    <a href="https://github.com/athrav138/WEBAI-HACKATHON" class="btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 4: Calculator Website -->
+            <div class="project-card">
+                <img src="cal.png" alt="Calculator Website">
+                <div class="project-info">
+                    <h3>Calculator Website</h3>
+                    <p>A simple and clean calculator made using HTML, CSS, and JavaScript.</p>
+                    <a href="https://athrav138.github.io/HTML-CSS-AND-JS-SIMPLE-PROJECTS/" class="btn" target="_blank">View Live</a>
+                    <a href="https://github.com/athrav138/HTML-CSS-AND-JS-SIMPLE-PROJECTS" class="btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Project 5: Animated Login & Signup UI -->
+            <div class="project-card">
+                <img src="sign.png" alt="Animated Login Signup UI">
+                <div class="project-info">
+                    <h3>Animated Login & Signup UI</h3>
+                    <p>An animated login and signup interface with smooth transitions.</p>
+                    <a href="https://athrav138.github.io/Animated-Login-Signup-UI/" class="btn" target="_blank">View Live</a>
+                    <a href="https://github.com/athrav138/Animated-Login-Signup-UI" class="btn" target="_blank">GitHub</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
